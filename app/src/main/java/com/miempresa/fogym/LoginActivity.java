@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,7 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
     EditText etName, etPassword;
+    TextView tvregister;
     ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class LoginActivity extends AppCompatActivity {
         etName = findViewById(R.id.etUserName);
         etPassword = findViewById(R.id.etUserPassword);
 
+        tvregister = findViewById(R.id.tvregister);
+
 
 
         //calling the method userLogin() for login the user
@@ -49,13 +53,14 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //if user presses on textview not register calling RegisterActivity
-        findViewById(R.id.tvRegister).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.tvregister).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
                 startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
             }
         });
+
     }
 
     private void userLogin() {
