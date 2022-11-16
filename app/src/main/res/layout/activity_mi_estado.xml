@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inicio">
-
+    tools:context=".Mi_Estado">
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="415dp"
@@ -21,19 +20,40 @@
         app:layout_constraintVertical_bias="0.49"
         app:srcCompat="@drawable/background_page" />
 
-    <ImageView
+    <LinearLayout
         android:id="@+id/imageView2"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/edit_text_background" />
+        android:background="@drawable/edit_text_background"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="00.00"
+                android:textSize="40sp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="numero de calorias de hoy:"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
 
-
-
+    </LinearLayout>
 
 
 
@@ -151,6 +171,8 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 
