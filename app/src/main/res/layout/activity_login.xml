@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="735dp"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -110,16 +110,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etUserName" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
-            android:text="Forget your password? Recovery it"
-            android:textColor="#4d4d4d" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -136,10 +126,18 @@
                 android:background="#7d7d7d" />
 
             <TextView
+                android:id="@+id/tvregister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="  Or login with  "
-                android:textColor="#4d4d4d" />
+                android:layout_marginTop="5dp"
+                android:minHeight="48dp"
+                android:onClick="clickTextView"
+                android:text="No tienes cuenta? Registrate"
+                android:textAlignment="center"
+                android:textColor="#7868e5"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <View
                 android:id="@+id/view2"
