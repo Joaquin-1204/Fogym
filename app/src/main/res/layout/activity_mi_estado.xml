@@ -102,13 +102,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/calculadora"
             android:layout_weight="1">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:paddingBottom="6dp"
-                android:id="@+id/calculadora"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -137,12 +137,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/mi_estado"
             android:layout_weight="1">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/Mi_estado"
                 android:paddingBottom="6dp"
                 android:orientation="vertical">
                 <LinearLayout
