@@ -1,5 +1,6 @@
 package com.miempresa.fogym;
 
+import static com.android.volley.Request.Method.GET;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 
