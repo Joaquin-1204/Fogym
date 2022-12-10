@@ -59,7 +59,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Calculadora"
+            android:name=".MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -73,7 +73,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Inicio"
+            android:name=".splash_fogym"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -101,14 +101,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Inicio"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".splash_fogym"
+            android:name=".Calculadora"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
