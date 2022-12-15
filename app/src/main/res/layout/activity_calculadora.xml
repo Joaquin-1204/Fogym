@@ -299,20 +299,25 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnRecomendacion"
-            style="@android:style/Widget.Button"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55sp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/button_background_blue"
-            android:text="Recomendar"
-            android:textColor="#ffffff"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRecomendacion"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background_blue"
+                android:text="Recomendación"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
     </LinearLayout>
 
